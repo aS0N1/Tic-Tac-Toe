@@ -18,11 +18,11 @@ window.addEventListener("DOMContentLoaded", () => {
             if (box.innerHTML.trim() === "") {
                 clickCount++; 
                 if (turnheart) {
-                    box.innerHTML = `<img src="assets/heart.png" alt="heart" style="width: 80%; height: 80%; object-fit: contain;">`;
+                    box.innerHTML = `<img src="../assets/heart.png" alt="heart" style="width: 80%; height: 80%; object-fit: contain;">`;
                     box.setAttribute("data-sign", "heart"); 
                     turnheart = false;
                 } else {
-                    box.innerHTML = `<img src="assets/sword.png" alt="sword" style="width: 80%; height: 80%; object-fit: contain;">`;
+                    box.innerHTML = `<img src="../assets/sword.png" alt="sword" style="width: 80%; height: 80%; object-fit: contain;">`;
                     box.setAttribute("data-sign", "sword"); 
                     turnheart = true;
                 }
@@ -43,17 +43,16 @@ window.addEventListener("DOMContentLoaded", () => {
                 if (pos1Val === pos2Val && pos2Val === pos3Val) {
                     isWinnerFound = true;
                     if (pos1Val === "heart") {
-                        window.location.href = "winner.html";
+                        window.location.href = "../pages/winner.html";
                     } else if (pos1Val === "sword") {
-                        window.location.href = "loser.html";
+                        window.location.href = "../pages/loser.html";
                     }
                     return;    
                 }
             }
         }
 
-        if (clickCount === 9 && !isWinnerFound) {
-            console.log("Match Draw!"); 
+        if (clickCount === 9 && !isWinnerFound) { 
             drawScreen.style.setProperty("display", "flex", "important"); 
         }
     } 
