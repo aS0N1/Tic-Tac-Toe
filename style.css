@@ -183,7 +183,7 @@ p img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 #reset-btn:hover {
-    background-color: #ffffff;
+    background-color: #f6ccd6;
     transform: scale(1.05);
     box-shadow: 0 6px 15px var(--shadow-pink);
 }
@@ -214,6 +214,72 @@ p img {
     cursor: pointer;
 }
 
+
+
+@media (max-width: 768px) {
+    .card{
+        border-width: 12px;
+        border-radius: 60px;
+        padding: 1.5rem 1.5rem 2rem;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    .game{
+        height: 60vmin;
+        width: 60vmin;
+    }
+    .box{
+        font-size: 9vmin;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        overflow: auto;
+        min-height: 100vh;
+    }
+    .card{
+        border-width: 8px;
+        padding: 1rem 1rem 1.5rem;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    .game{
+        height: 75vmin;
+        width: 75vmin;
+    }
+    .box{
+        font-size: 11vmin;
+    }
+    .box:nth-child(1), .box:nth-child(2), .box:nth-child(4), .box:nth-child(5), .box:nth-child(7), .box:nth-child(8) {
+        border-right-width: 6px;
+    }
+    .box:nth-child(1), .box:nth-child(2), .box:nth-child(3), .box:nth-child(4), .box:nth-child(5), .box:nth-child(6){
+        border-bottom-width: 6px;
+
+    }
+
+    .corner {
+        width: 16px;
+        height: 16px;
+        border-width: 3px;
+    }
+    p{
+        font-size: 0.9rem;
+        padding: 0.2rem 1rem;
+    }
+    p img{
+        height: 20px;
+        width: 25px;
+    }
+    #reset-btn{
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+}
 
 
 
