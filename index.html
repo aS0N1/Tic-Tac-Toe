@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe| homepage</title>
+    <style >
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: "cheese milky";
+            src: url("fonts/cheese_milky/Cheese\ Milky.otf");
+        }
+
+        body {
+            background-image: url('assets/bg-image.png');
+            backdrop-filter: blur(3px);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box; 
+            border: 6px solid #7a3b41; 
+            overflow: hidden;
+        }
+    
+        .welcome-container {    
+            padding: 3rem 4rem;
+            border-radius: 1.5rem; 
+            box-shadow: 0 0 2rem rgba(255, 175, 204, 0.4);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-family: "Pixel";
+            letter-spacing: 0.5rem;
+            word-spacing: 0.4rem;
+            line-height: 3rem;
+            color: #7a3b41;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            animation: float 4s ease-in-out infinite;
+        }
+        p{
+            border: none; 
+            font-family: "cheese milky";
+            font-size: 39px;
+            margin-top: 0.4rem;
+            color:  #ea8698;
+            letter-spacing: 9px;
+        } 
+        
+        img {
+            height: 5vmin;
+            width: 12vmin;
+            opacity: 0.8;
+
+        }
+
+       @font-face {
+        font-family: "Pixel";
+        src: url("fonts/dogica/TTF/dogicapixel.ttf");
+       }
+       @font-face {
+        font-family: "handwriting";
+        src: url("fonts/Internet\ Friends.ttf");
+       }
+
+        .start-btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 1rem 3rem;
+            font-family: "handwriting";
+            font-size: 1.1rem;
+            letter-spacing: 0.3rem;
+            line-height: 14px;
+            font-weight: bold;
+            color: #db585d;
+            background-color: rgba(241, 235, 208, 0.9); 
+            padding: 0.6rem 1.5rem ;
+            border: 3px solid #ea8698;
+            border-radius: 0.4rem;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 0.3rem;
+        }
+
+        .start-btn:hover {
+            background-color: aliceblue;
+            transform: scale(1.02); 
+            box-shadow: 0 6px 15px rgba(255, 117, 143, 0.4);
+        }
+        @keyframes float {
+            0%, 100% {transform: translateY(0);}
+            50% {transform: translateY(-24px);}
+        }
+
+        .window-panel{
+            background-color: aliceblue;
+            height: 15.5vh;
+            width: 41vw;
+            border: 4px solid #ea8698 ;
+            border-radius: 6px;
+            margin-left: auto;
+    margin-right: auto;
+        }
+        .window-panel-header{
+            background-color: #f5adba;
+            height: 4vh;
+            width: 40.7vw; 
+            margin-top: 2.5px;
+            display: flex;
+            align-items: center;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="welcome-container">
+        <h2>let's play</h2>
+        <h2> tic-tac-toe</h2>
+        <div class="window-panel">
+            <div class="window-panel-header"> <img src="assets/threeheart.png" id="window-panel-header-image"></div>
+            <p> Start game?</p>
+            <a href="home.html" class="start-btn">Start</a>
+        </div>
+    </div>
+    </style>
+</head>
+<body>
+<section>
+    <div>
+
+    </div>
+</section>
+
+
+    
+</body>
+</html>

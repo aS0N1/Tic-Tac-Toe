@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <main>
+            <h1>Tic Tac Toe</h1>
+
+            <div class="container">
+                <span class="corner corner-tl"></span>
+                <span class="corner corner-tr"></span>
+                <span class="corner corner-bl"></span>
+                <span class="corner corner-br"></span>
+
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+
+            <p><img src="assets/heart.png" alt="">-you &NonBreakingSpace;&NonBreakingSpace;<img src="assets/sword.png" alt=""> -me</p>
+            <button type="reset" id="reset-btn">Reset</button>
+        </main>
+    </div>
+
+    <!-- Draw Screen Overlay -->
+    <div id="draw-screen">
+        <h1>🤝 It's a Draw!</h1>
+        <button id="draw-reset-btn">Play Again</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | Winner Page </title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+@font-face {
+    font-family: "Pixel";
+    src: url("fonts/dogica/TTF/dogicapixel.ttf");
+}
+@font-face {
+    font-family: "handwriting";
+    src: url("fonts/Internet\ Friends.ttf");
+}
+@font-face {
+    font-family: "cheese milky";
+    src: url("fonts/cheese_milky/Cheese\ Milky.otf");
+}
+body{
+    background-image: url('assets/bg-image.png');
+    background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw; 
+            border: 6px solid #7a3b41; 
+            overflow: hidden;
+            color: #dd6e42;
+            font-family: "cheese milky";
+        }
+        body::before{
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(122, 59, 65, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .msg {
+            height: 95vh;
+            width: 95vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255,255,255,0.4);
+            backdrop-filter: blur(4px);
+            border: 3px solid #e8899a;
+            border-radius: 64px;
+        }
+        h2{
+            font-family: "handwriting";
+            margin-top: -61px;
+            font-size: 93px;
+            letter-spacing: 15px;
+        }
+
+        p {
+            font-size: 33px;
+            padding-top: 253px;
+            letter-spacing: 22px;
+        }
+        img{
+            height: 19vmin;
+            width: 19vmin;
+            cursor: pointer;
+                margin-top: -45px;
+        }
+        a {
+            font-family: "cheese milky";
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    color: var(--maroon);
+    background-color: rgba(241, 235, 208, 0.9);
+    padding: 0.5rem 2rem;
+    border: 3px solid var(--pink-border);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+        a:hover {
+    background-color: aliceblue;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(229, 107, 111, 0.35);}
+
+    </style>
+        
+</head>
+<body>
+    <div class="msg">
+        <h2> You Won!</h2>
+        <p> OPEN</p>
+        <img src="assets/mail.png" >
+        <a href="index.html" >Play Again </a>
+    </div>
+<script>
+    let image = document.querySelector("img");
+    image.addEventListener("click", ()=> {
+          
+    })
+</script>
+</body>
+
+</html>
