@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe </title>
+    <link rel="icon" href="../assets/heart.png" sizes="64x64">
     <style>
         * {
     margin: 0;
@@ -63,21 +64,26 @@ body::before{
 }
 h2{
     font-family: "handwriting";
-    margin-top: -61px;
+    margin-top: 53px;
     font-size: 93px;
     letter-spacing: 15px;
 }
+
 p{
     font-size: 33px;
-    padding-top: 253px;
     letter-spacing: 22px;
+    position: absolute;
+    bottom: 275px;
 }
 img{
-    height: 19vmin;
-    width: 19vmin;
+    height: 30vmin;
+    width: 30vmin;
     cursor: pointer;
-    margin-top: -45px;
+    position: relative;
+    bottom: 37px;
+
 }
+
 a {
     font-family: "cheese milky";
     font-size: 1.1rem;
@@ -90,8 +96,9 @@ a {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    position: relative;
+    bottom: 32px;
 
 }
 a:hover {
@@ -108,7 +115,16 @@ a:hover {
         font-size: 22px;
         letter-spacing: 10px;
         padding-top: 6rem;
+        bottom: 290px;
     }
+    img{
+        position: relative;
+        bottom: 23px;
+    }
+    a{
+        bottom: 5px;
+    }
+
 }
 
 @media (max-width: 480px){
@@ -125,10 +141,16 @@ a:hover {
         font-size: 18px;
         letter-spacing: 5px;
         padding-top: 3rem;
+        position: absolute;
+        bottom: 348px
     }
     a{
         font-size: 0.9rem;
         padding: 0.5rem 1.5rem;
+        top: 19px;
+    }
+    img{
+        bottom: 13px;
     }
 }
 
@@ -138,6 +160,7 @@ a:hover {
 <body>
     <div class="msg">
         <h2> You Lose!</h2>
+        <img src="../assets/animation.gif">
         <p> It's okay!</p>
         <a href="../index.html" >Play Again </a>
     </div>

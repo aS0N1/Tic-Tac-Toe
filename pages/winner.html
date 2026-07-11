@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe </title>
+    <link rel="icon" href="../assets/heart.png" sizes="64x64">
     <style>
         * {
     margin: 0;
@@ -63,21 +64,23 @@ body::before{
 }
 h2{
     font-family: "handwriting";
-    margin-top: -61px;
+    margin-top: 53px;
     font-size: 93px;
     letter-spacing: 15px;
 }
 
 p {
     font-size: 33px;
-    padding-top: 253px;
+    position: absolute;
+    bottom: 275px;
     letter-spacing: 22px;
 }
 img{
-    height: 19vmin;
-    width: 19vmin;
+    height: 30vmin;
+    width: 30vmin;
     cursor: pointer;
-    margin-top: -45px;
+    position: relative;
+    bottom: 37px;
 }
 a {
     font-family: "cheese milky";
@@ -92,6 +95,8 @@ a {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 32px;
 }
 a:hover {
     background-color: #e4bec5;
@@ -105,13 +110,16 @@ a:hover {
     }
     p{
         font-size: 22px;
-        letter-spacing: 15px;
-        padding-top: 14rem;
-        margin-bottom: 28px;
+        letter-spacing: 10px;
+        padding-top: 6rem;
+        bottom: 290px;
     }
     img{
-        height: 150px;
-        width: 150px;
+        position: relative;
+        bottom: 23px;
+    }
+    a{
+        bottom: 5px;
     }
 }
 
@@ -127,19 +135,18 @@ a:hover {
     }
     p{
         font-size: 18px;
-        letter-spacing: 15px;
-        padding-top: 11rem;
-
-    }
-    img{
-        height: 80px;
-        width: 80px;
-        margin-top: 1px;
-
+        letter-spacing: 5px;
+        padding-top: 3rem;
+        position: absolute;
+        bottom: 348px
     }
     a{
         font-size: 0.9rem;
         padding: 0.5rem 1.5rem;
+        top: 19px;
+    }
+    img{
+        bottom: 13px;
     }
 }
 
@@ -149,16 +156,9 @@ a:hover {
 <body>
     <div class="msg">
         <h2> You Won!</h2>
-        <p> OPEN</p>
-        <img src="../assets/mail.png" >
+        <p> Yaah!!!</p>
+        <img src="../assets/animation.gif">
         <a href="../index.html" >Play Again </a>
     </div>
-<script>
-    let image = document.querySelector("img");
-    image.addEventListener("click", ()=> {
-          
-    })
-</script>
 </body>
-
 </html>
